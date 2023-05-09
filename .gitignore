@@ -1,0 +1,9 @@
+# IDE stuff
+.vs/
+.idea/
+.vscode/
+
+# Build file
+TaserSaber/bin/
+TaserSaber/obj/
+*.user
