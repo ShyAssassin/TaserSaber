@@ -67,10 +67,10 @@ namespace TaserSaber.Game
 			{
 				Logger.Info("bomb hit");
 			}
-
 			// check for all other miss events other than not actually hitting the block
-			if (!_NoteCutInfo.allIsOK) {
-				Logger.Info("Missed");
+			else if (!_NoteCutInfo.allIsOK)
+			{
+				Logger.Info("Bad Cut");
 			}
 		}
 
