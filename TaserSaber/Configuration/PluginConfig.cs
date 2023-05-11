@@ -8,6 +8,7 @@ namespace TaserSaber.Configuration
 	{
 		Miss,
 		Fail,
+		BadCut,
 		BombHit,
 		ComboBreak
 	}
