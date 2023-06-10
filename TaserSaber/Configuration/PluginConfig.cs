@@ -4,7 +4,7 @@ using IPA.Config.Stores;
 [assembly: InternalsVisibleTo(GeneratedStore.AssemblyVisibilityTarget)]
 namespace TaserSaber.Configuration
 {
-	enum TaserTriggers
+	enum TaserTrigger
 	{
 		Miss,
 		Fail,
@@ -18,7 +18,7 @@ namespace TaserSaber.Configuration
 		public static PluginConfig Instance { get; set; }
 		public virtual bool Enable { get; set; } = true;
 		public virtual string ServerAddress { get; set; } = "";
-		public virtual TaserTriggers TriggerOn { get; set; } = TaserTriggers.Fail;
+		public virtual TaserTrigger TriggerOn { get; set; } = TaserTrigger.Fail;
 
 		/// <summary>
 		/// This is called whenever BSIPA reads the config from disk (including when file changes are detected).
